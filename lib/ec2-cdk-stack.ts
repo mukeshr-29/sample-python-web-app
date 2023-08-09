@@ -120,7 +120,7 @@ export class Ec2CdkStack extends cdk.Stack {
     const sourceOutput = new Artifact();
     const githubSourceAction = new GitHubSourceAction({
       actionName: 'GithubSource',
-      oauthToken: SecretValue.secretsManager('github-oauth-token'), // MAKE SURE TO SET UP BEFORE
+      oauthToken: SecretValue.secretsManager('github-oauth-token1'), // MAKE SURE TO SET UP BEFORE
       owner: 'mukeshr-29', // THIS NEEDS TO BE CHANGED TO YOUR OWN USER ID
       repo: 'sample-python-web-app',
       branch: 'main',
